@@ -158,16 +158,18 @@ ui <- fluidPage(
                column(6,
                       #br(),
                       h1(p("User Manual")),
-                      tags$p(HTML("1. App start with default choices for their preferences. The list preferences and the choices are: ")),
+                      tags$p(HTML("1. Home : User can choose their preference type of travelers and year. ")),
                       tags$ul(
-                        tags$li(HTML("Type of tourism : Excursionist or Tourist")),
+                        tags$li(HTML("Type of travelers : Excursionist or Tourist")),
                         tags$li(HTML("Year : Year from 2000 to 2021"))
                       ),
-                      tags$p(HTML("2. User will choose their preference in tourism type to see the prediction.")),
-                      tags$p(HTML("3. The total expenditure product based on year for each preference can be found at link provided (excursionist expenditure) and (tourist expenditure) .")),
-                      tags$p(HTML("4. The app wil automatically list out all ranking for product spent by choosen preferences.Prediction for both type of travelers and classification based on the spending value.")),
-                      tags$p(HTML("5. It will also automatically disploy plot graph to visualize the data.")),
-                      tags$p(HTML("6. User can now comes up with solution for marketing tourism segmentation for future tourism in Malaysia."))
+                      tags$p(HTML("2. Prediction : User can choose their preference type of travelers, product to be predict in the number of future years they want.")),
+                      tags$p(HTML("3. Comparision : User can choose their preference product and number of future year to be predict between both excursionist and tourist.")),
+                      tags$p(HTML("4. Classification : User can choose their preference type of travelers and product to be classify based on the spending value level.")),
+                      tags$p(HTML("5. The total expenditure product based on year for each preference can be found at link provided (excursionist expenditure) and (tourist expenditure) .")),
+                      tags$p(HTML("6. The app wil automatically list out all ranking for product spent by choosen preferences.Prediction for both type of travelers and classification based on the spending value.")),
+                      tags$p(HTML("7. It will also automatically display plot graph to visualize the data.")),
+                      tags$p(HTML("8. User can now comes up with solution for marketing tourism segmentation for future tourism in Malaysia."))
                       #hr(),
                )
                
@@ -181,7 +183,7 @@ ui <- fluidPage(
                       tags$p(HTML("Our aim is to provide valuable insights and support decision-making processes for stakeholders in tourism sector.")),
                       tags$p(HTML("Problem faced:")),
                       tags$ul(
-                        tags$li(HTML("Understanding the composition and impact of the visitors to Malaysia is crucial for effective tourism planning and development.Howeve, distinguishing between excursionists and tourists, analyzing their trends over time, and ranking their contributions can be challenging without the right tools and methodologies.")),
+                        tags$li(HTML("Understanding the composition and impact of the visitors to Malaysia is crucial for effective tourism planning and development.However, distinguishing between excursionists and tourists, analyzing their trends over time, and ranking their contributions can be challenging without the right tools and methodologies.")),
                         
                       ),
                       tags$p(HTML("Our Solution:")),
@@ -199,7 +201,11 @@ ui <- fluidPage(
                         tags$li(HTML("<a href=\"https://data.gov.my/data/en_US/dataset/domestic-tourism-expenditure-of-excursionist-by-products/resource/4766b545-e49d-448a-b7b3-eead1c321684\">https://data.gov.my/data/en_US/dataset/domestic-tourism-expenditure-of-excursionist-by-products/resource/4766b545-e49d-448a-b7b3-eead1c321684</a>.")),
                         tags$li(HTML("<a href=\"https://www.data.gov.my/data/ms_MY/dataset/inbound-tourism-expenditure-of-tourist-by-products/resource/826ae021-15f2-4840-a81c-7a63c19ce32a\">https://www.data.gov.my/data/ms_MY/dataset/inbound-tourism-expenditure-of-tourist-by-products/resource/826ae021-15f2-4840-a81c-7a63c19ce32a</a>.")),
                         
-                      )
+                      ), 
+                      h1(p("Github")),
+                      tags$ul(
+                        tags$li(HTML("<a href=\"https://github.com/nrfaizzah/WIE2003\">https://github.com/nrfaizzah/WIE2003</a>.")),
+                       )
                )),
              
     ),
